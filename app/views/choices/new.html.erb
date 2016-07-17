@@ -1,0 +1,24 @@
+<% content_for :title do %>Choice<% end %>
+<h4>User's Choice</h4>
+<p>Do you choose rock, paper, or scissors?<br> Please indicate your choice with a 'x'.</p>
+
+<%= form_for :choice, url: choices_path do |f| %>
+  <p>
+    <%= f.label :rock %><br>
+    <%= f.text_field :rock %>
+  </p>
+   
+  <p>
+    <%= f.label :paper %><br>
+    <%= f.text_field :paper %>
+  </p>
+   
+  <p>
+    <%= f.label :scissors %><br>
+    <%= f.text_field :scissors %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
