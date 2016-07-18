@@ -1,5 +1,9 @@
 == README
 
+ruby 2.3.1
+rails 4.2.5
+no database
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
